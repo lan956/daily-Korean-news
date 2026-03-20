@@ -1,0 +1,22 @@
+{
+  "name": "korean-news-bot",
+  "version": "1.0.0",
+  "description": "Daily Korean Telegram news digest — translated via Google Translate, sent to a personal channel.",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "gen-session": "node scripts/gen_session.js"
+  },
+  "dependencies": {
+    "@vitalets/google-translate-api": "^8.4.0",
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.9.0",
+    "telegram": "^2.26.10",
+    "input": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
