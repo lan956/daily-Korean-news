@@ -31,6 +31,7 @@ async function run() {
   const title  = `📰 <b>${DIGEST_TITLE}</b>\n<i>${runAt}</i>`;
 
   await sendDigest(title, digest);
+  process.exit(0);
 }
 
 run().catch((err) => {

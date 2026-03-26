@@ -3,8 +3,7 @@
  * Handles per-request errors, retries, and a polite delay to avoid 429s.
  */
 
-import pkg from "@vitalets/google-translate-api";
-const { translate } = pkg;
+import translate from "@vitalets/google-translate-api";
 
 const DELAY_MS      = 300;  // ms between requests — be polite to Google
 const MAX_RETRIES   = 3;
